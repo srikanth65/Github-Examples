@@ -1,0 +1,13 @@
+    name: Scheduled Workflow
+    on:
+      schedule:
+        - cron: '*/2 * * * *'
+    jobs:
+      run_scheduled_task:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v4
+          - name: Run a script
+            run: |
+              echo "This job runs on a schedule!"
