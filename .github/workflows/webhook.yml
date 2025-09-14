@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Run a script
         run: echo "Event of type: $GITHUB_EVENT_NAME"
+
+        
